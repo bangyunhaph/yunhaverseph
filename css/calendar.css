@@ -1,0 +1,548 @@
+/* kawaii-calendar.css - Sweet Dreams Theme */
+
+/* Import Google Fonts for kawaii style */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap');
+
+/* Calendar Section Styles */
+.calendar-section {
+    background: linear-gradient(135deg, #fff4e6 0%, #ffe0cc 50%, #ffd4b3 100%);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(255, 180, 120, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    padding: 35px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #ffb366;
+    font-family: 'Nunito', sans-serif;
+}
+
+.calendar-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(90deg, #ffb366, #ffc999, #ffd4b3, #ffe0cc);
+    z-index: 1;
+}
+
+/* Kawaii decorative elements */
+.calendar-section::after {
+    content: '🐻 ⭐ 🍓 🌟 🧸 ✨';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    z-index: 2;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0.6; transform: translateY(0px); }
+    50% { opacity: 1; transform: translateY(-5px); }
+}
+
+.section-title {
+    color: #d4822a;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);
+}
+
+.section-title::before {
+    content: '🐻 ';
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 6px;
+    background: linear-gradient(90deg, #ffb366, #ffc999);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(255, 180, 120, 0.4);
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(255, 180, 120, 0.2);
+}
+
+.calendar-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff 0%, #fff4e6 100%);
+    border: 3px solid #ffb366;
+    color: #d4822a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+}
+
+.calendar-nav:hover {
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+}
+
+.current-month {
+    font-size: 1.8rem;
+    color: #d4822a;
+    margin: 0;
+    font-weight: 800;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+.calendar-body {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
+    overflow: hidden;
+    border: 2px solid #ffc999;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+}
+
+.day-name {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Nunito', sans-serif;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    background-color: #ffeedd;
+    padding: 2px;
+}
+
+.date {
+    background: linear-gradient(135deg, #fff 0%, #fff9f0 100%);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.date:hover {
+    background: linear-gradient(135deg, #ffeedd 0%, #ffddcc 100%);
+    transform: scale(1.05);
+    border-color: #ffb366;
+    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+}
+
+.prev-month-date, .next-month-date {
+    color: #cccccc;
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+}
+
+.event-dot {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+    box-shadow: 0 2px 6px rgba(255, 107, 157, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.2); }
+}
+
+.upcoming-events {
+    background: linear-gradient(135deg, #fff 0%, #fff9f0 100%);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
+    border: 2px solid #ffc999;
+    position: relative;
+}
+
+.upcoming-events::before {
+    content: '📅✨';
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.upcoming-events h4 {
+    color: #d4822a;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 2px dotted #ffc999;
+    background: rgba(255, 249, 240, 0.5);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.event-item:hover {
+    background: rgba(255, 235, 210, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 180, 120, 0.2);
+}
+
+.event-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.event-date {
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    height: fit-content;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 180, 120, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.event-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.event-details h5 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #d4822a;
+    font-weight: 700;
+}
+
+.event-details p {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    color: #8b5a2b;
+    font-weight: 500;
+}
+
+.event-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #ff6b9d;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.event-link:hover {
+    background-color: #ff6b9d;
+    color: white;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+/* Countdown Timer Section */
+.countdown-section {
+    background: linear-gradient(135deg, #fff4e6 0%, #ffe0cc 50%, #ffd4b3 100%);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(255, 180, 120, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    padding: 35px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #ffb366;
+    font-family: 'Nunito', sans-serif;
+}
+
+.countdown-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(90deg, #ffb366, #ffc999, #ffd4b3, #ffe0cc);
+    z-index: 1;
+}
+
+.countdown-section::after {
+    content: '⏰ 🧸 ⭐ 💖 🌟';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    z-index: 2;
+    animation: sparkle 3s ease-in-out infinite reverse;
+}
+
+.countdown-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
+    overflow: hidden;
+    border: 2px solid #ffc999;
+}
+
+.countdown-event {
+    display: none;
+    padding: 30px;
+}
+
+.countdown-event.active {
+    display: block;
+}
+
+.event-info {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.event-info h3 {
+    color: #d4822a;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+.event-info h3::before {
+    content: '🎉 ';
+    margin-right: 8px;
+}
+
+.event-info p {
+    color: #8b5a2b;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+}
+
+.countdown-value {
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+.countdown-label {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #8b5a2b;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.countdown-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff9f0 0%, #ffeedd 100%);
+}
+
+.countdown-btn {
+    background: linear-gradient(135deg, #fff 0%, #fff4e6 100%);
+    border: 3px solid #ffb366;
+    color: #d4822a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+}
+
+.countdown-btn:hover {
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+}
+
+.countdown-btn.active {
+    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .current-month {
+        font-size: 1.4rem;
+    }
+    
+    .day-name {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+    
+    .date {
+        height: 50px;
+        font-size: 0.9rem;
+    }
+    
+    .event-dot {
+        bottom: 6px;
+        width: 6px;
+        height: 6px;
+    }
+    
+    .countdown-timer {
+        gap: 15px;
+    }
+    
+    .countdown-item {
+        min-width: 70px;
+    }
+    
+    .countdown-value {
+        height: 60px;
+        width: 60px;
+        font-size: 1.5rem;
+    }
+    
+    /* Stacked view for events on mobile */
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .event-date {
+        margin-bottom: 15px;
+        width: fit-content;
+        align-self: center;
+    }
+    
+    .event-details {
+        padding-left: 0;
+    }
+    
+    .calendar-section::after,
+    .countdown-section::after {
+        font-size: 1rem;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .calendar-container {
+        flex-direction: column;
+    }
+    
+    .countdown-value {
+        height: 65px;
+        width: 65px;
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,367 @@
+<?php
+// home.php - Home Page for YUNHAverse PH
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ff87b2">
+    <title>YUNHAverse Philippines</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/fanart-showcase.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="image/logoyunha.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="image/logoyunha.png" alt="Yunha Logo" class="nav-logo">
+            <span class="logo-text">YUNHAverse PH</span>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="home" class="nav-item active">Home</a>
+            <a href="events.php" class="nav-item">Events</a>
+            <a href="members.php" class="nav-item">Members Profile</a>
+            <a href="gallery.php" class="nav-item">Gallery</a>
+            <a href="blog.php" class="nav-item">Blog</a>
+            <a href="about.php" class="nav-item">About</a>
+            <a href="login.php" class="nav-item login-btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="menu-overlay"></div>
+
+    <div class="main-content">
+        <header>
+            <img src="image/logoyunha.png" alt="Yunha Logo">
+            <h1>YUNHAverse Philippines</h1>
+            <p class="tagline">
+                Annyeong! We are <strong>YUNHAverse PH</strong>, a fanbase dedicated for UNIS 유니스 All-Rounder Puppy Bang Yunha 방윤하 🍞🐶
+            </p>
+        </header>
+
+        <!-- Image Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="image/hbdyunha.png" alt="Happy Birthday Yunha">
+                    <div class="carousel-caption">Happy Birthday Yunha</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="image/yunha28days.png" alt="Yunha 28 Days">
+                    <div class="carousel-caption">Yunha 28 Days</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="image/yunhacse.png" alt="Yunha CSE">
+                    <div class="carousel-caption">Yunha CSE</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+        <div class="content">
+             
+            <!-- Fanart Showcase Section -->
+            <section class="fanart-showcase">
+                <h2 class="showcase-title">Fan Art Showcase</h2>
+                <div class="fanart-grid">
+                    <!-- Fanart Item 1 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/hbdyunha.png" alt="Happy Birthday Yunha Fanart" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Happy Birthday Yunha</h3>
+                                <p class="fanart-artist">Artist: YunhaLover123</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fanart Item 2 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/yunha28days.png" alt="Yunha 28 Days Fanart" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Yunha 28 Days</h3>
+                                <p class="fanart-artist">Artist: YunhaArtist99</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fanart Item 3 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/yunhacse.png" alt="Yunha CSE Fanart" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Yunha CSE</h3>
+                                <p class="fanart-artist">Artist: YunhaFanArtPH</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fanart Item 4 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/hbdyunha.png" alt="Yunha Drawing" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Yunha Portrait</h3>
+                                <p class="fanart-artist">Artist: YunhaCreative</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fanart Item 5 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/yunha28days.png" alt="Yunha Digital Art" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Digital Yunha</h3>
+                                <p class="fanart-artist">Artist: DigitalYunhaArt</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fanart Item 6 -->
+                    <div class="fanart-item">
+                        <div class="fanart-frame">
+                            <img src="image/yunhacse.png" alt="Yunha Sketch" class="fanart-image">
+                            <div class="fanart-info">
+                                <h3 class="fanart-title">Yunha Sketch</h3>
+                                <p class="fanart-artist">Artist: YunhaSketchMaster</p>
+                                <div class="artist-links">
+                                    <a href="#" class="artist-link"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <a href="#" class="artist-link"><i class="fab fa-twitter"></i> Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>   
+
+            <!-- Countdown Timer Section -->
+            <section class="countdown-section">
+                <h2 class="section-title">Countdown to Important Dates</h2>
+                <div class="countdown-container">
+                    <div class="countdown-event active" data-date="2025-08-21">
+                        <div class="event-info">
+                            <h3>Yunha's Birthday</h3>
+                            <p>August 21, 2025</p>
+                        </div>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <span class="countdown-value days">111</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value hours">11</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value minutes">51</span>
+                                <span class="countdown-label">Mins</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value seconds">37</span>
+                                <span class="countdown-label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="countdown-controls">
+                        <button class="countdown-btn" data-date="2026-02-28" data-event="Yunha's Birthday">
+                            <i class="fas fa-birthday-cake"></i>
+                        </button>
+                        <button class="countdown-btn" data-date="2025-07-15" data-event="UNIS Comeback">
+                            <i class="fas fa-music"></i>
+                        </button>
+                        <button class="countdown-btn" data-date="2025-06-10" data-event="UNIS Fan Concert in Manila">
+                            <i class="fas fa-users"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Calendar Events Section -->
+            <section class="calendar-section">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 class="current-month">May 2025</h3>
+                        <button class="calendar-nav next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    
+                    <div class="calendar-body">
+                        <div class="calendar-days">
+                            <div class="day-name">Sun</div>
+                            <div class="day-name">Mon</div>
+                            <div class="day-name">Tue</div>
+                            <div class="day-name">Wed</div>
+                            <div class="day-name">Thu</div>
+                            <div class="day-name">Fri</div>
+                            <div class="day-name">Sat</div>
+                        </div>
+                        <div class="calendar-dates">
+                            <!-- Previous month days -->
+                            <div class="date prev-month-date">28</div>
+                            <div class="date prev-month-date">29</div>
+                            <div class="date prev-month-date">30</div>
+                            <!-- Current month days -->
+                            <div class="date">1</div>
+                            <div class="date">2 <span class="event-dot"></span></div>
+                            <div class="date">3</div>
+                            <div class="date">4</div>
+                            <div class="date">5 <span class="event-dot"></span></div>
+                            <div class="date">6</div>
+                            <div class="date">7</div>
+                            <div class="date">8</div>
+                            <div class="date">9</div>
+                            <div class="date">10 <span class="event-dot"></span></div>
+                            <div class="date">11</div>
+                            <div class="date">12</div>
+                            <div class="date">13</div>
+                            <div class="date">14</div>
+                            <div class="date">15 <span class="event-dot"></span></div>
+                            <div class="date">16</div>
+                            <div class="date">17</div>
+                            <div class="date">18</div>
+                            <div class="date">19</div>
+                            <div class="date">20</div>
+                            <div class="date">21</div>
+                            <div class="date">22</div>
+                            <div class="date">23</div>
+                            <div class="date">24 <span class="event-dot"></span></div>
+                            <div class="date">25</div>
+                            <div class="date">26</div>
+                            <div class="date">27</div>
+                            <div class="date">28</div>
+                            <div class="date">29</div>
+                            <div class="date">30</div>
+                            <div class="date">31</div>
+                            <!-- Next month days -->
+                            <div class="date next-month-date">1</div>
+                        </div>
+                    </div>
+                    
+                    <div class="upcoming-events">
+                        <h4>Events This Month</h4>
+                        <ul class="event-list">
+                            <li class="event-item">
+                                <div class="event-date">May 2</div>
+                                <div class="event-details">
+                                    <h5>UNIS Livestream Watch Party</h5>
+                                    <p>7:00 PM @ Cafe K-Hub, Makati</p>
+                                    <a href="events.php?id=231" class="event-link">View Details</a>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">May 5</div>
+                                <div class="event-details">
+                                    <h5>YUNHAverse PH Online Meeting</h5>
+                                    <p>8:00 PM @ Discord</p>
+                                    <a href="events.php?id=232" class="event-link">View Details</a>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">May 10</div>
+                                <div class="event-details">
+                                    <h5>Photocard Trading Event</h5>
+                                    <p>1:00 PM @ SM North EDSA</p>
+                                    <a href="events.php?id=233" class="event-link">View Details</a>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">May 15</div>
+                                <div class="event-details">
+                                    <h5>K-pop Convention UNIS Booth</h5>
+                                    <p>All Day @ SMX Convention Center</p>
+                                    <a href="events.php?id=234" class="event-link">View Details</a>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">May 24</div>
+                                <div class="event-details">
+                                    <h5>Yunha Birthday Project Planning</h5>
+                                    <p>3:00 PM @ Cafe K-Hub, Makati</p>
+                                    <a href="events.php?id=235" class="event-link">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+    </div>
+    
+    <!-- Enhanced Footer with Proper YUNHAverse PH Styling -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yunhaverseph" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <!-- Changed from fa-x-twitter to fa-twitter for better compatibility -->
+                <a href="https://x.com/YunhaversePH" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yunhaverseph" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <div class="contact-info">
+                <p>For inquiries and collaborations, send your 💌 at:</p>
+                <p><strong>bangyunhaph@gmail.com</strong></p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="about.php">About Us</a>
+                <a href="privacy.php">Privacy Policy</a>
+                <a href="terms.php">Terms of Service</a>
+                <a href="contact.php">Contact Us</a>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; <?php echo date('Y'); ?> YUNHAverse PH. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="js/fanart-showcase.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/countdown.js"></script>
+
+</body>
+</html>
+
+

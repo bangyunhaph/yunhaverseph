@@ -1,0 +1,367 @@
+/* Kawaii Orange Fanart Showcase Styles */
+.fanart-showcase {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background-color: #fff8f0;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 179, 102, 0.15) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 153, 51, 0.12) 0%, transparent 20%),
+        radial-gradient(circle at 50% 50%, rgba(255, 204, 153, 0.08) 0%, transparent 30%),
+        radial-gradient(circle at 20% 60%, rgba(255, 220, 179, 0.06) 0%, transparent 25%);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 153, 51, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.fanart-showcase::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: 
+        radial-gradient(circle at 15% 25%, rgba(255, 179, 102, 0.03) 0%, transparent 8%),
+        radial-gradient(circle at 85% 75%, rgba(255, 153, 51, 0.03) 0%, transparent 8%),
+        radial-gradient(circle at 45% 15%, rgba(255, 204, 153, 0.02) 0%, transparent 6%),
+        radial-gradient(circle at 75% 45%, rgba(255, 220, 179, 0.02) 0%, transparent 6%);
+    animation: float 20s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(10px, -10px) rotate(1deg); }
+    66% { transform: translate(-10px, 10px) rotate(-1deg); }
+}
+
+.showcase-title {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #ff9933;
+    font-size: 2.2rem;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(255, 179, 102, 0.3);
+    z-index: 1;
+}
+
+.showcase-title:after {
+    content: '★ ♡ ★';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: #ffcc99;
+    text-shadow: 1px 1px 2px rgba(255, 153, 51, 0.4);
+}
+
+.fanart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.fanart-item {
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    perspective: 1000px;
+}
+
+.fanart-item:hover {
+    transform: translateY(-12px) scale(1.02);
+    z-index: 10;
+}
+
+.fanart-item:nth-child(4n+1) .fanart-frame {
+    background: linear-gradient(135deg, #fff0e6, #fff8f0);
+    border-color: #ffcc99;
+}
+
+.fanart-item:nth-child(4n+2) .fanart-frame {
+    background: linear-gradient(135deg, #ffe6cc, #fff5eb);
+    border-color: #ffb366;
+}
+
+.fanart-item:nth-child(4n+3) .fanart-frame {
+    background: linear-gradient(135deg, #ffdab3, #fff2e6);
+    border-color: #ff9933;
+}
+
+.fanart-item:nth-child(4n+4) .fanart-frame {
+    background: linear-gradient(135deg, #ffcc99, #ffebcc);
+    border-color: #ff8000;
+}
+
+.fanart-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 153, 51, 0.2);
+    height: 300px;
+    border: 6px solid #ffcc99;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+    background: linear-gradient(45deg, #fff0e6, #fff8f0);
+}
+
+.fanart-item:hover .fanart-frame {
+    box-shadow: 0 20px 40px rgba(255, 153, 51, 0.35);
+    transform: rotateY(3deg) rotateX(2deg);
+    border-color: #ff9933;
+}
+
+.fanart-frame::after {
+    content: '★';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #ffcc99;
+    text-shadow: 1px 1px 2px rgba(255, 153, 51, 0.5);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.fanart-item:hover .fanart-frame::after {
+    opacity: 1;
+    transform: rotate(72deg) scale(1.2);
+    color: #ff9933;
+}
+
+.fanart-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    border-radius: 14px;
+}
+
+.fanart-item:hover .fanart-image {
+    transform: scale(1.08);
+}
+
+/* Kawaii decorative elements */
+.fanart-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 179, 102, 0.4) 0%, transparent 15%),
+        radial-gradient(circle at 80% 70%, rgba(255, 153, 51, 0.3) 0%, transparent 15%),
+        radial-gradient(circle at 60% 20%, rgba(255, 204, 153, 0.2) 0%, transparent 12%);
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 14px;
+}
+
+.fanart-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, 
+        rgba(255, 153, 51, 0.95) 0%, 
+        rgba(255, 179, 102, 0.85) 50%, 
+        rgba(255, 204, 153, 0.4) 80%,
+        transparent 100%);
+    color: white;
+    padding: 25px;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+}
+
+.fanart-item:hover .fanart-info {
+    transform: translateY(0);
+}
+
+.fanart-item:nth-child(4n+1) .fanart-info {
+    background: linear-gradient(to top, 
+        rgba(255, 153, 51, 0.95) 0%, 
+        rgba(255, 179, 102, 0.85) 50%, 
+        rgba(255, 204, 153, 0.4) 80%,
+        transparent 100%);
+}
+
+.fanart-item:nth-child(4n+2) .fanart-info {
+    background: linear-gradient(to top, 
+        rgba(255, 128, 0, 0.95) 0%, 
+        rgba(255, 153, 51, 0.85) 50%, 
+        rgba(255, 179, 102, 0.4) 80%,
+        transparent 100%);
+}
+
+.fanart-item:nth-child(4n+3) .fanart-info {
+    background: linear-gradient(to top, 
+        rgba(255, 102, 0, 0.95) 0%, 
+        rgba(255, 128, 0, 0.85) 50%, 
+        rgba(255, 153, 51, 0.4) 80%,
+        transparent 100%);
+}
+
+.fanart-item:nth-child(4n+4) .fanart-info {
+    background: linear-gradient(to top, 
+        rgba(255, 140, 26, 0.95) 0%, 
+        rgba(255, 165, 77, 0.85) 50%, 
+        rgba(255, 191, 128, 0.4) 80%,
+        transparent 100%);
+}
+
+.fanart-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.1s, opacity 0.5s ease 0.1s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.fanart-title::after {
+    content: '♡';
+    font-size: 0.8em;
+    margin-left: 8px;
+    opacity: 0.8;
+}
+
+.fanart-artist {
+    font-size: 1rem;
+    opacity: 0;
+    margin: 8px 0 12px 0;
+    transform: translateY(25px);
+    transition: transform 0.5s ease 0.2s, opacity 0.5s ease 0.2s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.artist-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s;
+    flex-wrap: wrap;
+}
+
+.fanart-item:hover .fanart-title,
+.fanart-item:hover .fanart-artist,
+.fanart-item:hover .artist-links {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.artist-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.artist-link:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.artist-link i {
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fanart-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    .fanart-frame {
+        height: 260px;
+    }
+    
+    .fanart-info {
+        padding: 20px;
+    }
+    
+    .fanart-title {
+        font-size: 1.2rem;
+    }
+    
+    .showcase-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fanart-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .fanart-frame {
+        height: 280px;
+    }
+    
+    .fanart-info {
+        transform: translateY(65%);
+    }
+    
+    .fanart-title {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .showcase-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Active state for mobile touch */
+.fanart-item.active .fanart-info {
+    transform: translateY(0);
+}
+
+.fanart-item.active .fanart-title,
+.fanart-item.active .fanart-artist,
+.fanart-item.active .artist-links {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Additional kawaii animations */
+@keyframes sparkle {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.fanart-frame::after {
+    animation: sparkle 2s ease-in-out infinite;
+}
