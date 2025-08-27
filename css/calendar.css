@@ -1,18 +1,18 @@
-/* kawaii-calendar.css - Sweet Dreams Theme */
+/* kawaii-calendar.css - Pink Sweet Dreams Theme */
 
 /* Import Google Fonts for kawaii style */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap');
 
 /* Calendar Section Styles */
 .calendar-section {
-    background: linear-gradient(135deg, #fff4e6 0%, #ffe0cc 50%, #ffd4b3 100%);
+    background: linear-gradient(135deg, #fff0f8 0%, #ffe1f1 50%, #ffd6ec 100%);
     border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(255, 180, 120, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
     padding: 35px;
     margin: 40px 0;
     position: relative;
     overflow: hidden;
-    border: 3px solid #ffb366;
+    border: 3px solid #ffb3d6;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
     height: 12px;
-    background: linear-gradient(90deg, #ffb366, #ffc999, #ffd4b3, #ffe0cc);
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1, #ffc0cb, #ffe1f1);
     z-index: 1;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .section-title {
-    color: #d4822a;
+    color: #d14a86;
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
     margin-bottom: 35px;
@@ -69,9 +69,9 @@
     transform: translateX(-50%);
     width: 120px;
     height: 6px;
-    background: linear-gradient(90deg, #ffb366, #ffc999);
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1);
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(255, 180, 120, 0.4);
+    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.4);
 }
 
 .calendar-container {
@@ -89,16 +89,16 @@
     padding: 15px 10px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(255, 180, 120, 0.2);
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.2);
 }
 
 .calendar-nav {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #fff 0%, #fff4e6 100%);
-    border: 3px solid #ffb366;
-    color: #d4822a;
+    background: linear-gradient(135deg, #fff 0%, #fff0f8 100%);
+    border: 3px solid #ff69b4;
+    color: #d14a86;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,19 +106,19 @@
     transition: all 0.3s ease;
     font-size: 1.2rem;
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
 
 .calendar-nav:hover {
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
 }
 
 .current-month {
     font-size: 1.8rem;
-    color: #d4822a;
+    color: #d14a86;
     margin: 0;
     font-weight: 800;
     font-family: 'Fredoka One', cursive;
@@ -128,16 +128,16 @@
 .calendar-body {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
     overflow: hidden;
-    border: 2px solid #ffc999;
+    border: 2px solid #ffb6c1;
 }
 
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
 }
 
@@ -153,12 +153,12 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
-    background-color: #ffeedd;
+    background-color: #ffeef5;
     padding: 2px;
 }
 
 .date {
-    background: linear-gradient(135deg, #fff 0%, #fff9f0 100%);
+    background: linear-gradient(135deg, #fff 0%, #fff8fc 100%);
     height: 60px;
     display: flex;
     justify-content: center;
@@ -173,10 +173,10 @@
 }
 
 .date:hover {
-    background: linear-gradient(135deg, #ffeedd 0%, #ffddcc 100%);
+    background: linear-gradient(135deg, #ffeef5 0%, #ffe1f1 100%);
     transform: scale(1.05);
-    border-color: #ffb366;
-    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+    border-color: #ff69b4;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
 
 .prev-month-date, .next-month-date {
@@ -192,8 +192,8 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
-    box-shadow: 0 2px 6px rgba(255, 107, 157, 0.4);
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+    box-shadow: 0 2px 6px rgba(255, 20, 147, 0.4);
     animation: pulse 2s ease-in-out infinite;
 }
 
@@ -203,11 +203,11 @@
 }
 
 .upcoming-events {
-    background: linear-gradient(135deg, #fff 0%, #fff9f0 100%);
+    background: linear-gradient(135deg, #fff 0%, #fff8fc 100%);
     border-radius: 25px;
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
-    border: 2px solid #ffc999;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    border: 2px solid #ffb6c1;
     position: relative;
 }
 
@@ -221,7 +221,7 @@
 }
 
 .upcoming-events h4 {
-    color: #d4822a;
+    color: #d14a86;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 1.5rem;
@@ -240,16 +240,16 @@
     display: flex;
     margin-bottom: 20px;
     padding: 15px;
-    border-bottom: 2px dotted #ffc999;
-    background: rgba(255, 249, 240, 0.5);
+    border-bottom: 2px dotted #ffb6c1;
+    background: rgba(255, 248, 252, 0.5);
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .event-item:hover {
-    background: rgba(255, 235, 210, 0.8);
+    background: rgba(255, 238, 245, 0.8);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 180, 120, 0.2);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
 }
 
 .event-item:last-child {
@@ -258,7 +258,7 @@
 }
 
 .event-date {
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
@@ -267,7 +267,7 @@
     height: fit-content;
     min-width: 80px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(255, 180, 120, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -279,21 +279,21 @@
 .event-details h5 {
     margin: 0 0 8px 0;
     font-size: 1.1rem;
-    color: #d4822a;
+    color: #d14a86;
     font-weight: 700;
 }
 
 .event-details p {
     margin: 0 0 10px 0;
     font-size: 0.95rem;
-    color: #8b5a2b;
+    color: #8b4464;
     font-weight: 500;
 }
 
 .event-link {
     display: inline-block;
     font-size: 0.9rem;
-    color: #ff6b9d;
+    color: #ff1493;
     text-decoration: none;
     font-weight: 600;
     padding: 4px 8px;
@@ -302,7 +302,7 @@
 }
 
 .event-link:hover {
-    background-color: #ff6b9d;
+    background-color: #ff1493;
     color: white;
     text-decoration: none;
     transform: scale(1.05);
@@ -310,14 +310,14 @@
 
 /* Countdown Timer Section */
 .countdown-section {
-    background: linear-gradient(135deg, #fff4e6 0%, #ffe0cc 50%, #ffd4b3 100%);
+    background: linear-gradient(135deg, #fff0f8 0%, #ffe1f1 50%, #ffd6ec 100%);
     border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(255, 180, 120, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.6);
     padding: 35px;
     margin: 40px 0;
     position: relative;
     overflow: hidden;
-    border: 3px solid #ffb366;
+    border: 3px solid #ffb3d6;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -328,7 +328,7 @@
     left: 0;
     width: 100%;
     height: 12px;
-    background: linear-gradient(90deg, #ffb366, #ffc999, #ffd4b3, #ffe0cc);
+    background: linear-gradient(90deg, #ff69b4, #ffb6c1, #ffc0cb, #ffe1f1);
     z-index: 1;
 }
 
@@ -348,9 +348,9 @@
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(255, 180, 120, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
     overflow: hidden;
-    border: 2px solid #ffc999;
+    border: 2px solid #ffb6c1;
 }
 
 .countdown-event {
@@ -368,7 +368,7 @@
 }
 
 .event-info h3 {
-    color: #d4822a;
+    color: #d14a86;
     font-family: 'Fredoka One', cursive;
     font-size: 1.8rem;
     margin: 0 0 8px 0;
@@ -381,7 +381,7 @@
 }
 
 .event-info p {
-    color: #8b5a2b;
+    color: #8b4464;
     font-size: 1.1rem;
     margin: 0;
     font-weight: 600;
@@ -401,7 +401,7 @@
 }
 
 .countdown-value {
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
     height: 70px;
     width: 70px;
@@ -412,7 +412,7 @@
     font-size: 1.8rem;
     font-weight: 800;
     font-family: 'Fredoka One', cursive;
-    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     border: 3px solid white;
     animation: bounce 2s ease-in-out infinite;
@@ -426,7 +426,7 @@
 .countdown-label {
     margin-top: 12px;
     font-size: 0.9rem;
-    color: #8b5a2b;
+    color: #8b4464;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -437,13 +437,13 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(135deg, #fff9f0 0%, #ffeedd 100%);
+    background: linear-gradient(135deg, #fff8fc 0%, #ffeef5 100%);
 }
 
 .countdown-btn {
-    background: linear-gradient(135deg, #fff 0%, #fff4e6 100%);
-    border: 3px solid #ffb366;
-    color: #d4822a;
+    background: linear-gradient(135deg, #fff 0%, #fff0f8 100%);
+    border: 3px solid #ff69b4;
+    color: #d14a86;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -454,20 +454,20 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
 
 .countdown-btn:hover {
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
 }
 
 .countdown-btn.active {
-    background: linear-gradient(135deg, #ffb366 0%, #ffc999 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb6c1 100%);
     color: white;
-    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
 }
 
 /* Responsive Styles */

@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    
     // Add click event to toggle
     mobileMenuToggle.addEventListener('click', function(e) {
         e.stopPropagation();
