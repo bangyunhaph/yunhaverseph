@@ -97,11 +97,6 @@ body {
         border-color: #FFB6C1;
     }
     
-    .login-btn:hover {
-        background: linear-gradient(135deg, #FF1493, #FF69B4) !important;
-        box-shadow: 0 8px 20px rgba(255, 20, 147, 0.5);
-        transform: translateY(-3px) scale(1.05);
-    }
     
     header img:hover {
         transform: scale(1.1) rotate(10deg);
@@ -123,13 +118,6 @@ body {
     color: white;
     box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
     border-color: #FF1493;
-}
-
-.login-btn {
-    background: linear-gradient(135deg, #FF69B4, #FF1493) !important;
-    color: white !important;
-    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
-    border: 2px solid #FF1493;
 }
 
 /* Main content area */
